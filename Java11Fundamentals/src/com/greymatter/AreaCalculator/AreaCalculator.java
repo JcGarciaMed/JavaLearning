@@ -1,4 +1,4 @@
-package com.greymatter;
+package com.greymatter.AreaCalculator;
 
 public class AreaCalculator {
 
