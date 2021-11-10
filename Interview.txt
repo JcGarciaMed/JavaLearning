@@ -1,9 +1,17 @@
 																							*********************
 																							*****ENTREVISTAS*****
 																							*********************
+* AUTOBOXING primitivo -> Clase
+* UNBOXING clase -> primitivo
+	
+
 
 1. LIST -- INTERFACE
-		ARRAYLIST -- IMPLEMENTACION DE interface LIST -- RESIZABLE!!!!
+		ARRAYLIST 
+				* IMPLEMENTACION DE interface LIST -- RESIZABLE!!!!
+				* NO AGUANTA DATOS PRIMITIVOS- REQUIERE UNA CLASE
+		LINKEDLIST
+				* 
 2. 
 	
 	
@@ -21,3 +29,6 @@ SPRING FRAMEWORK
 
 pxymedin@cibertec.edu.pe
 
+	
+
+MAVEN 
