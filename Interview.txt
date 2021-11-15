@@ -8,11 +8,11 @@
 
 1. LIST -- INTERFACE
 		ARRAYLIST 
-				* IMPLEMENTACION DE interface LIST -- RESIZABLE!!!!
+				* IMPLEMENTACION DE interface LIST --> RESIZABLE!!!!
 				* NO AGUANTA DATOS PRIMITIVOS- REQUIERE UNA CLASE
 		LINKEDLIST
-				* 
-2. 
+				* Guarda index,Value, ADDREESS!!!!! Recorridos mas eficientes.
+2. Interfaces --> Ayudan al desacoplamiento.
 	
 	
 	
@@ -22,13 +22,44 @@
 	
 	
 	
+																							************************
+																							****SPRING FRAMEWORK****
+																							************************
+
+* Ligero, Brinda Soporte a otros frameworks.
+
+* Creado por Rod Johnson.
+
+
+
 	
-SPRING FRAMEWORK
+1. Inversion de Control ....   Quita responsabilidad del controlador de crear el servicio
+								El contenedor gestiona las instancias (Creación y Destrucción)
+								*****Principio de Hollywood --> NO NOS LLAMES NOSTROS TE LLAMAMOS
+								USA JAVA REFLEXION
+2. Inyeccion de dependencias ... Permite enviar en tiempo de ejecución instacias de una clase a otra.								
+	* Por constructor
+	* Por propiedad
+	* Por metodo
+3. BEAN ..... Cualquier componente gestionado por IOC
+
+
+4. Anotaciones
+	*@Bean --> Agrega el bean al spring context dentro de una clase config
+	*@Component --> Agrega el bean al spring context
+	*@Qualifier --> Define que implementación de una interface usar
+	*@Scope --> Ambito singletob prototype
+	
+5. Ambitos
+	*Singleton .- Instancia por aplicación... Clases Funcionales					
+	*Prototype .- Instancia por cada solicitud ... Clases de datos
+	
+6.AOP--> Programación Orientada a Aspectos
+
+								
+
+MAVEN 
 
 
 
 pxymedin@cibertec.edu.pe
-
-	
-
-MAVEN 
