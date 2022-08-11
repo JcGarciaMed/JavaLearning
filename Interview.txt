@@ -1,24 +1,40 @@
-																							*********************
-																							*****ENTREVISTAS*****
-																							*********************
+																							**************************
+																							*****FUNDAMENTOS JAVA*****
+																							**************************
 * AUTOBOXING primitivo -> Clase
 * UNBOXING clase -> primitivo
 	
 
 
-1. LIST -- INTERFACE
+1. Interface List
 		ARRAYLIST 
 				* IMPLEMENTACION DE interface LIST --> RESIZABLE!!!!
 				* NO AGUANTA DATOS PRIMITIVOS- REQUIERE UNA CLASE
 		LINKEDLIST
 				* Guarda index,Value, ADDREESS!!!!! Recorridos mas eficientes.
+		
+		Diferencia entre SET Y LIST
+			SET evita duplicados
+			LIST PERMITE DUPLICADOS
+			
 2. Interfaces --> Ayudan al desacoplamiento.
 	
 	
+Cuando Usar clase Wraper y cuando usar primitivo????
+	WRAPER ACEPTA NULOS, PRIMITIVOS NO
+		
 	
 	
+																							**************
+																							*****REST*****
+																							**************
+																							
 	
+Rest --> Arquitectura --> Propone poder enviar datos en HTTP en diferentes tipos de verbos(put post get). Json, xml, plano, Arreglode bytes
+Soap --> Protocolo de comunicación-- > Mensaje va en formato xml	
 	
+HttpStatus.IAMATEAPOT = 418
+
 	
 	
 	
@@ -29,6 +45,10 @@
 * Ligero, Brinda Soporte a otros frameworks.
 
 * Creado por Rod Johnson.
+* Spring Security forma parte de Spring FRAMEWORK****? --> NO --> Es un proyecto independiente.
+* Especificación/Implementación
+	Especificación  -> contrato									--> JPA
+	Implementación --> Producto desarrollado en base a contrato --> Hibernate  --> ORM 
 
 
 
@@ -43,23 +63,109 @@
 	* Por metodo
 3. BEAN ..... Cualquier componente gestionado por IOC
 
-
-4. Anotaciones
+4. Anotaciones Entrevistas
 	*@Bean --> Agrega el bean al spring context dentro de una clase config
 	*@Component --> Agrega el bean al spring context
+		@Controller
+		@Service
+		@Repository
 	*@Qualifier --> Define que implementación de una interface usar
-	*@Scope --> Ambito singletob prototype
+	*@Scope --> Ambito singleton prototype
 	
 5. Ambitos
 	*Singleton .- Instancia por aplicación... Clases Funcionales					
 	*Prototype .- Instancia por cada solicitud ... Clases de datos
 	
-6.AOP--> Programación Orientada a Aspectos
+6.@ControllerAdvice	
+	
+7.AOP--> Programación Orientada a Aspectos
+
+8. CORS 
 
 								
+																							************************
+																							****	SPRING MVC  ****
+																							************************
+ 
+7. Usa Arquitectura Model View and Controller. Separa Negocio, navegación y lógica de presentación
+8. Basado en patron de diseño Front Controller (Los sucios Servlets)
 
-MAVEN 
-
+9. Dispatcher Servlet --> Recibe todos los request. Unica Instancia. FRONT CONTROLLER
+		HandlerMapping --> Resuelve Alias del Controller
+		Controller 		--> Maneja Request del Usuario, Navegación, Delega objetos al servicio(Logica de negocio),  Devuelve Alias de Página, Json, XML, etc..
+		ViewResolver 	--> Resuelve Alias 
+		
 
 
 pxymedin@cibertec.edu.pe
+
+																							****************************
+																							****	SPRING CLOUD    ****
+																							****	MicroServices	****
+																							****************************
+																							
+Read Desing Patterns!!!!!!!!!!!!!!!!!!!
+
+1. What are Microservices?
+			* Monolithic Architecture -->  	Single Application
+											One Code Base
+											One Build System
+											Single Executional Program (WAR EAR)
+											Could Become Very Big
+											10's of thousends packages, classes
+											Code is stored Together
+											Typically will use one data base
+											Code Releases are done as one big version
+											Scaling is an all or nothing situation.
+											
+											Para escalar se tiene que crear varias instancias o clusters en el servidor
+											
+											Benfits
+											========
+											Development is easy - everything is in one project
+											Deployment is easy - One app to deploy
+											Testing is simplified - one app to test
+											
+											Problems
+											========
+											Business requirements grows, the complexity grows
+											Can lead to anti patterns - spaghetti code, big ball of mud
+											Hard to modify
+											Technology Lock in - Difficult to introduce new technologies
+											CI/CD Difficult
+											
+											
+											THERE IS NO SILVER BULLET FOR EVERY SITUATION
+											
+            * MICROSERVICES Architecture  -->	Small targeted services
+											Each service has its own repository
+											Microservices are isolated from another services
+											When interacting with other services, should be done in a techonlogy agnostic manner
+											ie, Restful web services - HTTP/JSON
+											
+											Applications are composed using individual MICROSERVICES
+											Each MicroService Service will typically have its own databe
+											Each MicroService is independently deployable
+											Scaling is posible
+											CI/CD its easier
+											
+											Benfits
+											========
+											Easy to understand and develop, services are smaller and more targeted
+											Deployment is easy - One app to deploy
+											Testing is simplified - one app to test											
+										
+				
+					
+
+
+
+
+
+
+
+																							************************
+																							****	ANGULAR     ****
+																							************************
+
+* conectarse con JAVA usar libreria HTTPCLIENT
